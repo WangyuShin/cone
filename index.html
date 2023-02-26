@@ -111,16 +111,16 @@
 
     <script>
         function showText(number) {
-        if (number === 1) {
-            document.querySelector("#desc1").classList.remove("hideText");
-            document.querySelector("#desc1").classList.add("showText");
-        } else if (number === 2) {
-            document.querySelector("#desc2").classList.remove("hideText");
-            document.querySelector("#desc2").classList.add("showText");
-        } else {
-            document.querySelector("#desc3").classList.remove("hideText");
-            document.querySelector("#desc3").classList.add("showText");
-        }
+            if (number === 1) {
+                document.querySelector("#desc1").classList.remove("hideText");
+                document.querySelector("#desc1").classList.add("showText");
+            } else if (number === 2) {
+                document.querySelector("#desc2").classList.remove("hideText");
+                document.querySelector("#desc2").classList.add("showText");
+            } else {
+                document.querySelector("#desc3").classList.remove("hideText");
+                document.querySelector("#desc3").classList.add("showText");
+            }
         }
 
         // 텍스트가 감춰지는 기능
@@ -150,7 +150,7 @@
 <body>
     <div class="container">
         <div class="photos">
-            <div id="image1" class="photo-frame"
+            <!-- <div id="image1" class="photo-frame"
                 onmouseover="hideText(1)"
                 onmouseout="showText(1)"
                 onclick="alertText(1)"
@@ -176,10 +176,30 @@
                 <span id="desc3" class="photo_description">
                     친구랑 싸웠을 때 위로해준 너
                 </span>
-            </div>
+            </div> -->
+
+            <!-- 흔들어 -->
             <div class="photo-frame">
                 <iframe
-                        src="https://www.youtube.com/embed/agYZbSt-3LY"
+                        src="https://www.youtube.com/embed/Gk1Nj61O7xU"
+                    frameborder="0"
+                    class="video"
+                ></iframe>
+            </div>
+
+            <!-- 샤이보이 -->
+            <div class="photo-frame">
+                <iframe
+                        src="https://www.youtube.com/embed/mT8Hc9-K_NM"
+                    frameborder="0"
+                    class="video"
+                ></iframe>
+            </div>
+
+            <!-- 피자파티 -->
+            <div class="photo-frame">
+                <iframe
+                    src="https://www.youtube.com/embed/wHEqb2qqtaI?start=5"
                     frameborder="0"
                     class="video"
                 ></iframe>
@@ -187,8 +207,8 @@
         </div>
 
         <div class="footer">
-            <p class="f-title">Happy Dinner Time</p>
-            <p class="f-date">2023.02.03</p>
+            <p class="f-title">재이 학예회</p>
+            <p class="f-date">2023</p>
         </div>
 
     </div>
